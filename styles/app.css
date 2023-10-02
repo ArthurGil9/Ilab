@@ -20,6 +20,7 @@
 .title {
   font-size: var(--size-title);
   font-weight: 800;
+  color: var(--color-black);
 }
 .title--small {
   font-size: var(--size-title-small);
@@ -33,6 +34,10 @@
 }
 .text--bold {
   font-weight: 600;
+}
+.text--small {
+  font-size: var(--size-small);
+  color: var(--color-opacity-high);
 }
 
 html, body {

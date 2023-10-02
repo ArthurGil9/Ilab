@@ -9,6 +9,7 @@
 .title{
     font-size: var(--size-title);
     font-weight: 800;
+    color: var(--color-black);
 
     &--small{
         font-size: var(--size-title-small);
@@ -24,5 +25,10 @@
 
     &--bold{
         font-weight: 600;
+    }
+
+    &--small{
+        font-size: var(--size-small);
+        color: var(--color-opacity-high);
     }
 }

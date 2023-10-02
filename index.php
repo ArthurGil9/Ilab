@@ -71,10 +71,10 @@
               <div class="project__roll">
                 <small class="text text--small">(SVG) @socialmedia</small>
                 <ul class="project__task">
-                  <li class="project__role">Rôle</li>
-                  <li class="project__role">Rôle</li>
-                  <li class="project__role">Rôle</li>
-                  <li class="project__role">Rôle</li>
+                  <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
                 </ul>
               </div>
               
