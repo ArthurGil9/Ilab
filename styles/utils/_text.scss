@@ -1,6 +1,6 @@
 :root{
-    --size-title-big: 60px;
-    --size-title: 42px;
+    --size-title: 60px;
+    --size-title-small: 42px;
     --size-text-big: 30px;
     --size-text: 21px;
     --size-small: 15px;
@@ -9,6 +9,10 @@
 .title{
     font-size: var(--size-title);
     font-weight: 800;
+
+    &--small{
+        font-size: var(--size-title-small);
+    }
 }
 
 .text{
@@ -16,5 +20,9 @@
 
     &--big{
         font-size: var(--size-text-big);
+    }
+
+    &--bold{
+        font-weight: 600;
     }
 }

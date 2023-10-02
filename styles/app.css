@@ -10,8 +10,8 @@
 }
 
 :root {
-  --size-title-big: 60px;
-  --size-title: 42px;
+  --size-title: 60px;
+  --size-title-small: 42px;
   --size-text-big: 30px;
   --size-text: 21px;
   --size-small: 15px;
@@ -21,12 +21,18 @@
   font-size: var(--size-title);
   font-weight: 800;
 }
+.title--small {
+  font-size: var(--size-title-small);
+}
 
 .text {
   font-size: var(--size-text);
 }
 .text--big {
   font-size: var(--size-text-big);
+}
+.text--bold {
+  font-weight: 600;
 }
 
 html, body {
@@ -39,7 +45,7 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.414;
   color: var(--color-jet);
 }

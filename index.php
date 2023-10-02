@@ -37,7 +37,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
     
     <link rel="stylesheet" href="https://use.typekit.net/mcs5uqx.css">
-    
+
     <link rel="stylesheet" href="styles/app.css">
 
     <script src="scripts/app.js" defer></script>
@@ -58,15 +58,15 @@
           </div>
           
           <ul class="project__proglist">
-            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
-            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
-            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
-            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
+            <li class="project__progel text">(SVG) Logiciel</li>
+            <li class="project__progel text">(SVG) Logiciel</li>
+            <li class="project__progel text">(SVG) Logiciel</li>
+            <li class="project__progel text">(SVG) Logiciel</li>
           </ul>
 
           <div class="project__team">
             <details>
-              <summary class="text text--bold text--uppercase">Personne Lambda</summary>
+              <summary class="text text--bold">Personne Lambda</summary>
 
               <div class="project__roll">
                 <small class="text text--small">(SVG) @socialmedia</small>
