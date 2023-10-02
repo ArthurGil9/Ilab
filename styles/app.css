@@ -1,9 +1,38 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-solitude: #F0F1F3;
+  --color-platinum: #E5E6EB;
+  --color-jet: #1F2023;
+  --color-night: #161618;
+  --color-black: #090909;
+  --color-opacity-low:hsla(0, 0%, 4%, 0.25);
+  --color-opacity-high:hsla(0, 0%, 4%, 0.6);
+}
+
+:root {
+  --size-title-big: 60px;
+  --size-title: 42px;
+  --size-text-big: 30px;
+  --size-text: 21px;
+  --size-small: 15px;
+}
+
+.title {
+  font-size: var(--size-title);
+  font-weight: 800;
+}
+
+.text {
+  font-size: var(--size-text);
+}
+.text--big {
+  font-size: var(--size-text-big);
+}
+
 html, body {
-  font-family: sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  position: relative;
-  scroll-behavior: smooth;
+  font-family: "neue-kabel", sans-serif;
+  font-size: var(--font-size-text);
+  background-color: var(--color-white);
 }
 
 * {
@@ -11,7 +40,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.414;
+  color: var(--color-jet);
 }
 
 .project__context {

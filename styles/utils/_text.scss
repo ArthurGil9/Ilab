@@ -1,9 +1,20 @@
-// $color-snow: #FFFEFE;
-// $color-sky: #BAF2FF;
-// $color-mint: #C0FFD2;
-// $color-jasmine: #FFE599;
-// $color-melon: #FFB3A6;
-// $color-illusion: #FFA0B7;
-// $color-violet: #E889E8;
-// $color-indigo: #B2A1FF;
-// $color-blackboard: #241E2E;
+:root{
+    --size-title-big: 60px;
+    --size-title: 42px;
+    --size-text-big: 30px;
+    --size-text: 21px;
+    --size-small: 15px;
+}
+
+.title{
+    font-size: var(--size-title);
+    font-weight: 800;
+}
+
+.text{
+    font-size: var(--size-text);
+
+    &--big{
+        font-size: var(--size-text-big);
+    }
+}

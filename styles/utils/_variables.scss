@@ -1,9 +1,10 @@
-// $color-snow: #FFFEFE;
-// $color-sky: #BAF2FF;
-// $color-mint: #C0FFD2;
-// $color-jasmine: #FFE599;
-// $color-melon: #FFB3A6;
-// $color-illusion: #FFA0B7;
-// $color-violet: #E889E8;
-// $color-indigo: #B2A1FF;
-// $color-blackboard: #241E2E;
+:root{
+    --color-white: #FFFFFF;
+    --color-solitude: #F0F1F3;
+    --color-platinum: #E5E6EB;
+    --color-jet: #1F2023;
+    --color-night: #161618;
+    --color-black: #090909;
+    --color-opacity-low :hsla(0, 0%, 4%, 0.25);
+    --color-opacity-high :hsla(0, 0%, 4%, 0.6);
+}

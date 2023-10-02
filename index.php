@@ -36,6 +36,8 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
     
+    <link rel="stylesheet" href="https://use.typekit.net/mcs5uqx.css">
+    
     <link rel="stylesheet" href="styles/app.css">
 
     <script src="scripts/app.js" defer></script>
@@ -45,32 +47,37 @@
       <article class="project">
         <div class="project__context">
           <div class="project__details">
-            <small class="text__small">Option</small>
-            <small class="text__small">Travail de fin d'études 2023</small>
-            <small class="text__small">(SVG) Temps</small>
+            <p class="text">Option</p>
+            <p class="text">Travail de fin d'études 2023</p>
+            <p class="text">(SVG) Temps</p>
           </div>
 
           <div class="project__desc">
             <h2 class="title">Titre du projet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text text--big">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           
           <ul class="project__proglist">
-            <li class="project__progel">(SVG) Logiciel</li>
-            <li class="project__progel">(SVG) Logiciel</li>
-            <li class="project__progel">(SVG) Logiciel</li>
-            <li class="project__progel">(SVG) Logiciel</li>
+            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
+            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
+            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
+            <li class="project__progel text text--uppercase">(SVG) Logiciel</li>
           </ul>
 
           <div class="project__team">
             <details>
-              <summary class="project__people">Personne Lambda</summary>
-              <ul class="project__task">
-                <li class="project__role">Rôle</li>
-                <li class="project__role">Rôle</li>
-                <li class="project__role">Rôle</li>
-                <li class="project__role">Rôle</li>
-              </ul>
+              <summary class="text text--bold text--uppercase">Personne Lambda</summary>
+
+              <div class="project__roll">
+                <small class="text text--small">(SVG) @socialmedia</small>
+                <ul class="project__task">
+                  <li class="project__role">Rôle</li>
+                  <li class="project__role">Rôle</li>
+                  <li class="project__role">Rôle</li>
+                  <li class="project__role">Rôle</li>
+                </ul>
+              </div>
+              
             </details>
           </div>
 
