@@ -41,12 +41,57 @@
     <script src="scripts/app.js" defer></script>
   </head>
   <body>
+    <main>
+      <article class="project">
+        <div class="project__context">
+          <div class="project__details">
+            <small class="text__small">Option</small>
+            <small class="text__small">Travail de fin d'études 2023</small>
+            <small class="text__small">(SVG) Temps</small>
+          </div>
 
-  <p>Hello world sandrine</p>
+          <div class="project__desc">
+            <h2 class="title">Titre du projet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          
+          <ul class="project__proglist">
+            <li class="project__progel">(SVG) Logiciel</li>
+            <li class="project__progel">(SVG) Logiciel</li>
+            <li class="project__progel">(SVG) Logiciel</li>
+            <li class="project__progel">(SVG) Logiciel</li>
+          </ul>
 
-  <p>ouiiiiiii</p>
+          <div class="project__team">
+            <details>
+              <summary class="project__people">Personne Lambda</summary>
+              <ul class="project__task">
+                <li class="project__role">Rôle</li>
+                <li class="project__role">Rôle</li>
+                <li class="project__role">Rôle</li>
+                <li class="project__role">Rôle</li>
+              </ul>
+            </details>
+          </div>
 
-  <p>test relance</p>
+          <p>SVG RETOUR ARRIERE</p>
+        </div>
 
+        <div class="project__content">
+          <ul class="project__nav">
+            <li class="project__navel">BARRE</li>
+            <li class="project__navel">BARRE</li>
+            <li class="project__navel">BARRE</li>
+            <li class="project__navel">BARRE</li>
+          </ul>
+
+          <div class="project__step">
+            <img src="" alt="" class="project__img">
+
+            <small class="text__small"></small>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
