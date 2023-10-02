@@ -1,16 +1,51 @@
 .project{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+  
   &__context{
-    padding: 0 64px 0 64px;
-    width: 596px;
-    align-items: center;
-
+  padding: 0 64px 0 64px;
+  align-items: center;
+  
+  
+  }
+  &__details{
+  margin: 42px 0;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   }
   
-  &__details{
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+  
+  &__desc{
+  margin: 42px 0;
+  
+  
+  .title{
+  margin-bottom: 16px ;
   }
-
-}
+  }
+  
+  
+  &__proglist{
+  margin: 42px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  }
+  
+  
+  &__team{
+  margin: 42px 0;
+  }
+  
+  
+  &__retour{
+  margin: 42px 0;
+  }
+  
+  
+  }
+  
