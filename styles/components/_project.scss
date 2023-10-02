@@ -1,51 +1,95 @@
-.project{
+.project {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  
-  
-  &__context{
-  padding: 0 64px 0 64px;
-  align-items: center;
-  
-  
+  height: 100vh;
+
+  //Contexte
+  &__context {
+    padding: 0 64px 0 64px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
   }
-  &__details{
-  margin: 42px 0;
-  text-align: end;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+
+  &__details {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-transform: uppercase;
   }
-  
-  
-  &__desc{
-  margin: 42px 0;
-  
-  
-  .title{
-  margin-bottom: 16px ;
+
+  //Titre projet
+  &__desc {
+    .title {
+      margin-bottom: 16px;
+    }
   }
+
+  //Logiciels
+  &__proglist {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
   }
-  
-  
-  &__proglist{
-  margin: 42px 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
+
+  &__progel {
+    text-transform: uppercase;
+    //En attandant d'avoir les icones
+    width: 190px;
   }
-  
-  
-  &__team{
-  margin: 42px 0;
+
+  //TEAM
+  &__team {
   }
-  
-  
-  &__retour{
-  margin: 42px 0;
+
+  &__person {
+    text-transform: uppercase;
+    font-weight: 600;
   }
-  
-  
+
+  details > summary {
+    display: list-item;
+    list-style: none;
   }
-  
+  details[open] > summary:before {
+    content: "–";
+  }
+
+  details:not([open]) > summary:before {
+    content: "+";
+  }
+
+  details > summary:before {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 32px;
+    font-weight: 100;
+  }
+
+  &__task {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  &__role {
+    list-style: none;
+  }
+
+  //SVG retour
+  &__retour {
+  }
+
+  &__content {
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}

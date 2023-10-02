@@ -55,14 +55,37 @@ html, body {
   color: var(--color-jet);
 }
 
+.project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 .project__context {
   padding: 0 64px 0 64px;
-  width: 596px;
   align-items: center;
 }
 .project__details {
+  margin: 42px 0;
   text-align: end;
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+.project__desc {
+  margin: 42px 0;
+}
+.project__desc .title {
+  margin-bottom: 16px;
+}
+.project__proglist {
+  margin: 42px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.project__team {
+  margin: 42px 0;
+}
+.project__retour {
+  margin: 42px 0;
 }/*# sourceMappingURL=app.css.map */
