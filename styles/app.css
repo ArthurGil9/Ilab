@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-white: #FFFFFF;
   --color-solitude: #F0F1F3;
@@ -58,34 +59,79 @@ html, body {
 .project {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  height: 100vh;
 }
 .project__context {
   padding: 0 64px 0 64px;
-  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
 }
 .project__details {
-  margin: 42px 0;
   text-align: end;
   display: flex;
   flex-direction: column;
   justify-content: end;
-}
-.project__desc {
-  margin: 42px 0;
+  text-transform: uppercase;
 }
 .project__desc .title {
   margin-bottom: 16px;
 }
 .project__proglist {
-  margin: 42px 0;
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 32px;
 }
-.project__team {
-  margin: 42px 0;
+.project__progel {
+  text-transform: uppercase;
+  width: 190px;
 }
-.project__retour {
-  margin: 42px 0;
+.project__person {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.project details > summary {
+  display: list-item;
+  list-style: none;
+}
+.project details[open] > summary:before {
+  content: "–";
+}
+.project details:not([open]) > summary:before {
+  content: "+";
+}
+.project details > summary:before {
+  display: inline-block;
+  font-size: 32px;
+  margin-right: 32px;
+  font-weight: 100;
+}
+.project__task {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.project__role {
+  list-style: none;
+}
+.project__content {
+  width: 100%;
+  background-color: var(--color-platinum);
+}
+.project__step {
+  height: 100%;
+  padding: 128px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.project__pic {
+  width: 100%;
+}
+.project__el {
+  text-transform: uppercase;
+  align-self: flex-start;
 }/*# sourceMappingURL=app.css.map */

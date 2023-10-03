@@ -82,14 +82,40 @@
   &__retour {
   }
 
+  // &__content {
+  // }
+
+  // &__nav {
+  //   list-style: none;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   height: 100%;
+  // }
+
+  // Test avec swiper :)
   &__content {
+    width: 100%;
+
+    background-color: var(--color-platinum);
   }
 
-  &__nav {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  &__step {
     height: 100%;
+    padding: 128px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__pic {
+    width: 100%;
+  }
+
+  &__el {
+    text-transform: uppercase;
+    align-self: flex-start;
   }
 }

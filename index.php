@@ -32,13 +32,16 @@
     <meta property="og:image:height" content="675">
       
       <!-- CHANGE HERE -->
-    <title>Lindsay Colard</title>
+    <title>iLab</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
     
     <link rel="stylesheet" href="https://use.typekit.net/mcs5uqx.css">
 
     <link rel="stylesheet" href="styles/app.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="scripts/app.js" defer></script>
   </head>
@@ -84,7 +87,7 @@
           <p>SVG RETOUR ARRIERE</p>
         </div>
 
-        <div class="project__content">
+        <!-- <div class="project__content">
           <ul class="project__nav">
             <li class="project__navel">BARRE</li>
             <li class="project__navel">BARRE</li>
@@ -95,8 +98,25 @@
           <div class="project__step">
             <img src="" alt="" class="project__img">
 
-            <small class="text__small"></small>
+            <small class="project__el text__small"></small>
           </div>
+        </div> -->
+
+        <!-- Test Swiper -->
+        <div class="project__content swiper">
+          <div class="project__slider swiper-wrapper">
+
+            <div class="swiper-slide">
+              <!-- Création d'une div en plus pour éviter des collisions avec la css de swiper-slide -->
+              <div class="project__step">
+                <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
+                <small class="project__el text__small">Etape</small>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
         </div>
       </article>
     </main>
