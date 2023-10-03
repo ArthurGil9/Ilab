@@ -98,7 +98,7 @@
           <div class="project__step">
             <img src="" alt="" class="project__img">
 
-            <small class="project__el text__small"></small>
+            <small class="project__el text"></small>
           </div>
         </div> -->
 
@@ -110,7 +110,7 @@
               <!-- Création d'une div en plus pour éviter des collisions avec la css de swiper-slide -->
               <div class="project__step">
                 <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
-                <small class="project__el text__small">Etape</small>
+                <small class="project__el text">Etape</small>
               </div>
               
             </div>
