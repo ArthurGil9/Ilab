@@ -40,10 +40,9 @@
 
     <link rel="stylesheet" href="styles/app.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
     <script src="scripts/app.js" defer></script>
+    <!-- Besoin de le lier -->
+    <script src="scripts/swiper.js" defer></script>
   </head>
   <body>
     <main>
@@ -112,9 +111,7 @@
                 <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
                 <small class="project__el text">Etape</small>
               </div>
-              
             </div>
-          </div>
 
           <div class="swiper-pagination"></div>
         </div>
