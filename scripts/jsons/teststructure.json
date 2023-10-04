@@ -1,7 +1,8 @@
 {
-  "option" : "Web Design & Transmedia",
+  
   "projects": [
     {
+      "option" : "Web Design & Transmedia",
       "type": "Type du projet",
       "year": 2023,
       "duration": "Durée",

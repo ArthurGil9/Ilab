@@ -38,10 +38,10 @@
     
     <link rel="stylesheet" href="https://use.typekit.net/mcs5uqx.css">
 
-    <link rel="stylesheet" href="styles/app.css">
-
     <link rel="stylesheet" href="styles/swiper-bundle.min.css"/>
     <script src="scripts/plugins/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles/app.css">
 
     <script src="scripts/app.js" defer></script>
     <script src="scripts/swiper.js" defer></script>
@@ -88,44 +88,29 @@
           <p>SVG RETOUR ARRIERE</p>
         </div>
 
-        <!-- <div class="project__content">
-          <ul class="project__nav">
-            <li class="project__navel">BARRE</li>
-            <li class="project__navel">BARRE</li>
-            <li class="project__navel">BARRE</li>
-            <li class="project__navel">BARRE</li>
-          </ul>
-
-          <div class="project__step">
-            <img src="" alt="" class="project__img">
-
-            <small class="project__el text"></small>
-          </div>
-        </div> -->
-
-        <!-- Test Swiper -->
-
         <div class="swiper project__content">
-
           <div class="swiper-wrapper project__slider">
 
             <div class="swiper-slide">
               <div class="project__step">
-                <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
-                <small class="project__el text">Etape</small>
-              </div>
+                <div class="project__pres">
+                    <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
+                    <small class="project__el text">Etape</small>
+                  </div>
+                </div>
             </div>
 
             <div class="swiper-slide">
               <div class="project__step">
-                <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
-                <small class="project__el text">Etape</small>
+                <div class="project__pres">
+                  <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
+                  <small class="project__el text">Etape</small>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="swiper-pagination"></div>
-
         </div>
       </article>
     </main>

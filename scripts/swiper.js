@@ -1,10 +1,10 @@
 "use strict";
 
 const swiper = new Swiper(".swiper", {
+  lazy: true,
   direction: "vertical",
   loop: false,
 
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true

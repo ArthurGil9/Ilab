@@ -13,3 +13,28 @@ html, body {
   line-height: 1.414;
   color: var(--color-jet);
 }
+
+// SWIPER CUSTOM CSS
+.swiper-pagination{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 32px;
+  &-bullet{
+    height: 100%;
+    max-height: 256px;
+    width: 2px;
+    border-radius: 2px;
+    opacity: 1;
+    background-color: var(--color-opacity-low);
+    transition: background-color 0.5s ease-out;
+
+    &-active{
+      width: 4px;
+      opacity: 1;
+      background-color: var(--color-black);
+    }
+  }
+}

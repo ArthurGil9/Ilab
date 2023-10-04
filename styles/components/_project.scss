@@ -5,10 +5,10 @@
 
   //Contexte
   &__context {
-    padding: 0 64px 0 64px;
+    padding: 48px 64px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   &__details {
@@ -22,16 +22,17 @@
   //Titre projet
   &__desc {
     .title {
-      margin-bottom: 16px;
+      padding-bottom: 16px;
     }
   }
 
   //Logiciels
   &__proglist {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 32px;
   }
 
   &__progel {
@@ -41,18 +42,29 @@
   }
 
   //TEAM
-  &__team {
+  details {
+    position: relative;
   }
 
-  &__person {
-    text-transform: uppercase;
-    font-weight: 600;
+  details::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-opacity-high);
+  }
+
+  summary {
+    margin-bottom: 8px;
   }
 
   details > summary {
     display: list-item;
     list-style: none;
   }
+
   details[open] > summary:before {
     content: "–";
   }
@@ -68,10 +80,20 @@
     font-weight: 100;
   }
 
+  &__roll {
+    padding-left: 10%;
+  }
+
+  &__socialmed {
+    margin-top: -16px;
+  }
+
   &__task {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
   &__role {
@@ -80,19 +102,10 @@
 
   //SVG retour
   &__retour {
+    width: 24px;
   }
 
-  // &__content {
-  // }
-
-  // &__nav {
-  //   list-style: none;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   height: 100%;
-  // }
-
+  // SWIPER PART
   &__slider{
     height: 100%;
   }
@@ -113,12 +126,19 @@
     background-color: var(--color-platinum);
   }
 
+  &__pres{
+    position: relative;
+  }
+
   &__pic {
     width: 100%;
   }
 
   &__el {
+    position: absolute;
     text-transform: uppercase;
     align-self: flex-start;
+    bottom: 0;
+    left: 0;
   }
 }
