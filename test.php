@@ -56,27 +56,37 @@ $projects = $data['projects'];
   </head>
   <body>
     <main>
+      <section class="home">
+        <div class="container">
+          <?php
+            for ($i = 0; $i < 47; $i++) {
+              if (!empty($projects[$i])) {
+                $project = $projects[$i];
+                $id = $project['id'];
+                $step = $project['steps'][0];
+                $img = $step['img'];
+                $img2x = $step['img2x'];
+                $place = $i + 1;
+                ?>
 
-    <!-- Générer les images -->
-    <?php 
-    foreach($projects as $project){
-        $id = $project['id'];
-        $step = $project['steps'][0];
-        $img = $step['img'];
-        $img2x = $step['img2x'];
-    ?>
-        <img
-        src="<?php echo $img ?>"
-        srcset="<?php echo $img2x ?>"
-        alt=""
-        class="click-image"
-        data-id="<?php echo $id; ?>">
+                  <img
+                  src="<?php echo $img ?>"
+                  srcset="<?php echo $img2x ?>"
+                  alt=""
+                  class="click-image <?php echo "g-".$place ?>"
+                  data-id="<?php echo $id; ?>">
 
-    <?php } ?>
+                <?php
+              }
+          }
+          ?>
+        </div>
+      </section>
+    
 
-      <article class="project">
+    <article class="project--test">
         <h2 id="title">Projet</h2>
-      </article>
+    </article>
     </main>
   </body>
 </html>
