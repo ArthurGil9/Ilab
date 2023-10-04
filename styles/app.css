@@ -126,6 +126,7 @@ html, body {
 }
 .project summary {
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 .project details > summary {
   display: list-item;
@@ -147,6 +148,7 @@ html, body {
   padding-left: 10%;
 }
 .project__socialmed {
+  display: block;
   margin-top: -16px;
 }
 .project__task {

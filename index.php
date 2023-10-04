@@ -73,7 +73,7 @@
               <summary class="text text--bold">Personne Lambda</summary>
 
               <div class="project__roll">
-                <small class="text text--small">(SVG) @socialmedia</small>
+                <small class="text text--small project__socialmed">(SVG) @socialmedia</small>
                 <ul class="project__task">
                   <li class="project__role text">Rôle</li>
                   <li class="project__role text">Rôle</li>

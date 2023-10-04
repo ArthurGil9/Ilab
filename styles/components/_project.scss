@@ -58,6 +58,7 @@
 
   summary {
     margin-bottom: 8px;
+    text-transform: uppercase;
   }
 
   details > summary {
@@ -85,6 +86,7 @@
   }
 
   &__socialmed {
+    display: block;
     margin-top: -16px;
   }
 
@@ -106,7 +108,7 @@
   }
 
   // SWIPER PART
-  &__slider{
+  &__slider {
     height: 100%;
   }
   &__content {
@@ -126,7 +128,7 @@
     background-color: var(--color-platinum);
   }
 
-  &__pres{
+  &__pres {
     position: relative;
   }
 
