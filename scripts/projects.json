@@ -1,0 +1,103 @@
+{
+  "options": ["Design Web & Transmedia", "Image réelle", "Communication graphique & publicitaire", "Métiers du dessin d’animation numérique 2D", "Film d’animation 3D", "Visual effect 3D", "Jeux video Game animation", "Jeux video Game art", "Jeux video Technical Art"],
+  
+  "projects": [
+    {
+      "id": "1",
+      "option": "Design Web & Transmedia",
+      "type": "Type du projet",
+      "year": 2023,
+      "duration": "Durée",
+      "title": "Titre du projet 1",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "programs": ["Programe 1", "Programe 2", "Programe 3"],
+      "steps": [
+        {
+          "img": "assets/placeholders/placeholder_paysage.jpg",
+          "img2x": "assets/placeholders/placeholder_paysage@2x.jpg 2x",
+          "name": "Rendu final"
+        },
+        {
+          "img": "assets/placeholders/placeholder_paysage.jpg",
+          "img2x": "assets/placeholders/placeholder_paysage@2x.jpg 2x",
+          "name": "croquis"
+        }
+      ],
+      "people": [
+        {
+          "name": "Étudiant 1",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        },
+        {
+          "name": "Étudiant 2",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        },
+        {
+          "name": "Étudiant 3",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        },
+        {
+          "name": "Étudiant 4",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "option": "Design Web & Transmedia",
+      "type": "Type du projet",
+      "year": 2023,
+      "duration": "Durée",
+      "title": "Titre du projet 2",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "programs": ["Programe 1", "Programe 2", "Programe 3"],
+      "steps": [
+        {
+          "img": "assets/placeholders/placeholder_portrait.jpg",
+          "img2x": "assets/placeholders/placeholder_portrait@2x.jpg 2x",
+          "name": "Rendu final"
+        },
+        {
+          "img": "assets/placeholders/placeholder_portrait.jpg",
+          "img2x": "assets/placeholders/placeholder_portrait@2x.jpg 2x",
+          "name": "croquis"
+        }
+      ],
+      "people": [
+        {
+          "name": "Étudiant 1",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        },
+        {
+          "name": "Étudiant 2",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        },
+        {
+          "name": "Étudiant 3",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        },
+        {
+          "name": "Étudiant 4",
+          "app": "instagram",
+          "social": "reseausocial",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+        }
+      ]
+    }
+  ]
+}

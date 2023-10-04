@@ -56,6 +56,12 @@ html, body {
   color: var(--color-jet);
 }
 
+.swiper-slide {
+  background-color: var(--color-platinum);
+}
+.swiper-slide:nth-child(even) {
+  background-color: var(--color-solitude);
+}
 .swiper-pagination {
   height: 100%;
   display: flex;
@@ -63,6 +69,9 @@ html, body {
   justify-content: center;
   flex-flow: column nowrap;
   gap: 32px;
+  left: 0 !important;
+  right: auto !important;
+  padding: 128px 32px;
 }
 .swiper-pagination-bullet {
   height: 100%;
@@ -179,7 +188,6 @@ html, body {
   align-items: center;
   justify-content: center;
   gap: 32px;
-  background-color: var(--color-platinum);
 }
 .project__pres {
   position: relative;

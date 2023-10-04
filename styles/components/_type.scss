@@ -15,26 +15,39 @@ html, body {
 }
 
 // SWIPER CUSTOM CSS
-.swiper-pagination{
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
-  gap: 32px;
-  &-bullet{
-    height: 100%;
-    max-height: 256px;
-    width: 2px;
-    border-radius: 2px;
-    opacity: 1;
-    background-color: var(--color-opacity-low);
-    transition: background-color 0.5s ease-out;
+.swiper{
+  &-slide{
+    background-color: var(--color-platinum);
+    &:nth-child(even) {
+      background-color: var(--color-solitude);
+    };
+  }
 
-    &-active{
-      width: 4px;
+  &-pagination{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 32px;
+    left: 0 !important;
+    right: auto !important;
+    padding: 128px 32px;
+
+    &-bullet{
+      height: 100%;
+      max-height: 256px;
+      width: 2px;
+      border-radius: 2px;
       opacity: 1;
-      background-color: var(--color-black);
+      background-color: var(--color-opacity-low);
+      transition: background-color 0.5s ease-out;
+
+      &-active{
+        width: 4px;
+        opacity: 1;
+        background-color: var(--color-black);
+      }
     }
   }
 }
