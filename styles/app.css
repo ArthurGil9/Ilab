@@ -62,10 +62,10 @@ html, body {
   height: 100vh;
 }
 .project__context {
-  padding: 0 64px 0 64px;
+  padding: 48px 64px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .project__details {
   text-align: end;
@@ -75,21 +75,34 @@ html, body {
   text-transform: uppercase;
 }
 .project__desc .title {
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 .project__proglist {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 .project__progel {
   text-transform: uppercase;
   width: 190px;
 }
-.project__person {
-  text-transform: uppercase;
-  font-weight: 600;
+.project details {
+  position: relative;
+}
+.project details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-opacity-high);
+}
+.project summary {
+  margin-bottom: 8px;
 }
 .project details > summary {
   display: list-item;
@@ -107,13 +120,24 @@ html, body {
   margin-right: 32px;
   font-weight: 100;
 }
+.project__roll {
+  padding-left: 10%;
+}
+.project__socialmed {
+  margin-top: -16px;
+}
 .project__task {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 }
 .project__role {
   list-style: none;
+}
+.project__retour {
+  width: 24px;
 }
 .project__slider {
   height: 100%;

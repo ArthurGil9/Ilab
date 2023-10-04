@@ -79,13 +79,42 @@
                   <li class="project__role text">Rôle</li>
                   <li class="project__role text">Rôle</li>
                   <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
+                </ul>
+              </div>
+              
+            </details>
+            <details>
+              <summary class="text text--bold">Personne Lambda</summary>
+
+              <div class="project__roll">
+                <small class="text text--small project__socialmed">(SVG) @socialmedia</small>
+                <ul class="project__task">
+                  <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
+                  <li class="project__role text">Rôle</li>
                 </ul>
               </div>
               
             </details>
           </div>
 
-          <p>SVG RETOUR ARRIERE</p>
+          <svg class="project__retour" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #090909;
+                  stroke-linecap: square;
+                  stroke-width: 4px;
+                }
+              </style>
+            </defs>
+            <path class="cls-1" d="m2,3v25h25"/>
+            <path class="cls-1" d="m4.7,26.38L26.3,3.7"/>
+          </svg>
         </div>
 
         <!-- <div class="project__content">
