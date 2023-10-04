@@ -40,8 +40,10 @@
 
     <link rel="stylesheet" href="styles/app.css">
 
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css"/>
+    <script src="scripts/plugins/swiper-bundle.min.js"></script>
+
     <script src="scripts/app.js" defer></script>
-    <!-- Besoin de le lier -->
     <script src="scripts/swiper.js" defer></script>
   </head>
   <body>
@@ -102,18 +104,28 @@
         </div> -->
 
         <!-- Test Swiper -->
-        <div class="project__content swiper">
-          <div class="project__slider swiper-wrapper">
+
+        <div class="swiper project__content">
+
+          <div class="swiper-wrapper project__slider">
 
             <div class="swiper-slide">
-              <!-- Création d'une div en plus pour éviter des collisions avec la css de swiper-slide -->
               <div class="project__step">
                 <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
                 <small class="project__el text">Etape</small>
               </div>
             </div>
 
+            <div class="swiper-slide">
+              <div class="project__step">
+                <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
+                <small class="project__el text">Etape</small>
+              </div>
+            </div>
+          </div>
+
           <div class="swiper-pagination"></div>
+
         </div>
       </article>
     </main>

@@ -115,9 +115,12 @@ html, body {
 .project__role {
   list-style: none;
 }
+.project__slider {
+  height: 100%;
+}
 .project__content {
   width: 100%;
-  background-color: var(--color-platinum);
+  height: 100vh;
 }
 .project__step {
   height: 100%;
@@ -127,6 +130,7 @@ html, body {
   align-items: center;
   justify-content: center;
   gap: 32px;
+  background-color: var(--color-platinum);
 }
 .project__pic {
   width: 100%;

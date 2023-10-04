@@ -93,11 +93,12 @@
   //   height: 100%;
   // }
 
-  // Test avec swiper :)
+  &__slider{
+    height: 100%;
+  }
   &__content {
     width: 100%;
-
-    background-color: var(--color-platinum);
+    height: 100vh;
   }
 
   &__step {
@@ -108,6 +109,8 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+
+    background-color: var(--color-platinum);
   }
 
   &__pic {
