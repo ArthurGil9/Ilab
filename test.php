@@ -69,12 +69,15 @@ $projects = $data['projects'];
                 $place = $i + 1;
                 ?>
 
-                  <img
-                  src="<?php echo $img ?>"
-                  srcset="<?php echo $img2x ?>"
-                  alt=""
-                  class="click-image <?php echo "g-".$place ?>"
-                  data-id="<?php echo $id; ?>">
+                  <div class="grid__item <?php echo "grid__item--".$place ?>">
+                    <img
+                    src="<?php echo $img ?>"
+                    srcset="<?php echo $img2x ?>"
+                    alt=""
+                    class="grid__img"
+                    data-id="<?php echo $id; ?>"
+                    >
+                  </div>
 
                 <?php
               }

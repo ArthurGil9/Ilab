@@ -8,18 +8,16 @@ fetch('scripts/projects.json')
     projects = data['projects'];
     console.log(projects);
 
-    // Appeler la fonction pour gérer les clics
     handleImageClicks();
   })
   .catch(error => {
-    // Gestion des erreurs
     console.error('Erreur :', error);
   });
 
 function handleImageClicks() {
-  var images = document.querySelectorAll('.click-image');
-  images.forEach(function(image) {
-    image.addEventListener('click', function() {
+  var gridImgs = document.querySelectorAll('.grid__img');
+  gridImgs.forEach(function(gridImg) {
+    gridImg.addEventListener('click', function() {
       var dataId = this.getAttribute('data-id');
       var projectData = null;
       // Chercher le projet correspondant dans les données du projet
@@ -29,9 +27,10 @@ function handleImageClicks() {
           console.log(projectData);
         }
       }
+      
       // Utiliser les données du projet
       if (projectData) {
-        // Mettre à jour le contenu de l'élément h2 avec l'ID "title"
+        // Mettre à jour le contenu
         var titleElement = document.getElementById('title');
         titleElement.innerText = projectData.title;
       }
