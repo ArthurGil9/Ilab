@@ -94,10 +94,10 @@ html, body {
   height: 100vh;
 }
 .project__context {
-  padding: 32px;
+  padding: 32px 48px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  gap: 80px;
 }
 .project__details {
   text-align: end;

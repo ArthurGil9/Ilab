@@ -5,10 +5,10 @@
 
   //Contexte
   &__context {
-    padding: 32px;
+    padding: 32px 48px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    gap: 80px;
   }
 
   &__details {
@@ -39,6 +39,7 @@
   }
 
   //TEAM
+
   details {
     position: relative;
   }
