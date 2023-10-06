@@ -62,10 +62,10 @@
           </div>
           
           <ul class="project__proglist">
-            <li class="project__progel text">(SVG) Logiciel</li>
-            <li class="project__progel text">(SVG) Logiciel</li>
-            <li class="project__progel text">(SVG) Logiciel</li>
-            <li class="project__progel text">(SVG) Logiciel</li>
+            <li class="project__progel text">(SVG) Photoshop</li>
+            <li class="project__progel text">(SVG) Premiere Pro</li>
+            <li class="project__progel text">(SVG) 3Ds studio Max</li>
+            <li class="project__progel text">(SVG) Marvelous Designer</li>
           </ul>
 
           <div class="project__team">
@@ -73,7 +73,7 @@
               <summary class="text text--bold">Personne Lambda</summary>
 
               <div class="project__roll">
-                <small class="text text--small">(SVG) @socialmedia</small>
+                <small class="text text--small project__socialmed">(SVG) @socialmedia</small>
                 <ul class="project__task">
                   <li class="project__role text">Rôle</li>
                   <li class="project__role text">Rôle</li>

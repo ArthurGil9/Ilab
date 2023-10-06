@@ -1,6 +1,6 @@
 <?php
 $json = file_get_contents('scripts/projects.json');
-$data = json_decode($json, true); // true pour obtenir un tableau associatif
+$data = json_decode($json, true);
 
 $options = $data['options'];
 $projects = $data['projects'];
@@ -57,11 +57,25 @@ $projects = $data['projects'];
   <body>
     <main>
       <section class="home">
+        <ul class="option__list">
+          <?php foreach($options as $option){
+            $optionid = $option['id'];
+            $optiontitle = $option['title'];
+            ?>
+
+            <li><button class="option__el" data-option="<?php echo $optionid ?>"><?php echo $optiontitle ?></button></li>
+
+          <?php } ?>
+        </ul>
+
         <div class="container">
           <?php
+          shuffle($projects);
+
             for ($i = 0; $i < 47; $i++) {
               if (!empty($projects[$i])) {
                 $project = $projects[$i];
+                $option = $project['filter'];
                 $id = $project['id'];
                 $step = $project['steps'][0];
                 $img = $step['img'];
@@ -76,6 +90,7 @@ $projects = $data['projects'];
                     alt=""
                     class="grid__img"
                     data-id="<?php echo $id; ?>"
+                    data-option="<?php echo $option ?>"
                     >
                   </div>
 

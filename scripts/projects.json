@@ -1,9 +1,20 @@
 {
-  "options": ["Design Web & Transmedia", "Image réelle", "Communication graphique & publicitaire", "Métiers du dessin d’animation numérique 2D", "Film d’animation 3D", "Visual effect 3D", "Jeux video Game animation", "Jeux video Game art", "Jeux video Technical Art"],
+  "options": [
+    {"id": "dwt", "title": "Design Web & Transmedia"},
+    {"id": "ir","title": "Image réelle"},
+    {"id": "comgraph","title": "Communication graphique & publicitaire"},
+    {"id": "medea","title": "Métiers du dessin d’animation numérique 2D"},
+    {"id": "3danim","title": "Film d’animation 3D"},
+    {"id": "vfx","title": "Visual effect 3D"},
+    {"id": "jvganim","title": "Jeux video Game Animation"},
+    {"id": "jvgart","title": "Jeux video Game Art"},
+    {"id": "jvtechart","title": "Jeux video Technical Art"}
+  ],
   
   "projects": [
     {
       "id": "1",
+      "filter": "dwt",
       "option": "Design Web & Transmedia",
       "type": "Type du projet",
       "year": 2023,
@@ -53,6 +64,7 @@
 
     {
       "id": "2",
+      "filter": "dwt",
       "option": "Design Web & Transmedia",
       "type": "Type du projet",
       "year": 2023,

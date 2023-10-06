@@ -5,6 +5,8 @@ var projects;
 fetch('scripts/projects.json')
   .then(response => response.json())
   .then(data => {
+    var options = data['options'];
+    console.log(options);
     projects = data['projects'];
     console.log(projects);
 

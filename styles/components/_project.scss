@@ -1,11 +1,11 @@
 .project {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 5fr;
   height: 100vh;
 
   //Contexte
   &__context {
-    padding: 48px 64px;
+    padding: 32px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -31,14 +31,11 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 16px;
-    column-gap: 32px;
+    gap: 16px;
   }
 
   &__progel {
     text-transform: uppercase;
-    //En attandant d'avoir les icones
-    width: 190px;
   }
 
   //TEAM
@@ -118,7 +115,7 @@
 
   &__step {
     height: 100%;
-    padding: 128px;
+    padding: 96px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
