@@ -69,35 +69,7 @@ $projects = $data['projects'];
         </ul>
 
         <div class="container">
-          <?php
-          shuffle($projects);
-
-            for ($i = 0; $i < 47; $i++) {
-              if (!empty($projects[$i])) {
-                $project = $projects[$i];
-                $option = $project['filter'];
-                $id = $project['id'];
-                $step = $project['steps'][0];
-                $img = $step['img'];
-                $img2x = $step['img2x'];
-                $place = $i + 1;
-                ?>
-
-                  <div class="grid__item <?php echo "grid__item--".$place ?>">
-                    <img
-                    src="<?php echo $img ?>"
-                    srcset="<?php echo $img2x ?>"
-                    alt=""
-                    class="grid__img"
-                    data-id="<?php echo $id; ?>"
-                    data-option="<?php echo $option ?>"
-                    >
-                  </div>
-
-                <?php
-              }
-          }
-          ?>
+ 
         </div>
       </section>
     
