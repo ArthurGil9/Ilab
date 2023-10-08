@@ -69,13 +69,16 @@ $projects = $data['projects'];
         </ul>
 
         <div class="container">
- 
         </div>
       </section>
     
 
     <article class="project--test">
         <h2 id="title">Projet</h2>
+        <ul class="project__proglist">
+            <li class="project__progel text">
+            </li>
+          </ul>
     </article>
     </main>
   </body>
