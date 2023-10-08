@@ -26,7 +26,7 @@
     }
   }
 
-  //Logiciels
+  //ProgList
   &__proglist {
     list-style: none;
     display: grid;
@@ -36,6 +36,10 @@
 
   &__progel {
     text-transform: uppercase;
+  }
+
+  .svg__progel {
+    fill: aquamarine;
   }
 
   //TEAM

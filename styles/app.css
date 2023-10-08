@@ -118,6 +118,9 @@ html, body {
 .project__progel {
   text-transform: uppercase;
 }
+.project .svg__progel {
+  fill: aquamarine;
+}
 .project details {
   position: relative;
 }
