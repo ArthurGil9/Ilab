@@ -36,10 +36,13 @@
 
   &__progel {
     text-transform: uppercase;
+    display: flex;
+    gap: 16px;
+    align-items: center;
   }
 
   .svg__progel {
-    fill: aquamarine;
+    width: 48px;
   }
 
   //TEAM

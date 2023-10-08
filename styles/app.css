@@ -117,9 +117,12 @@ html, body {
 }
 .project__progel {
   text-transform: uppercase;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 .project .svg__progel {
-  fill: aquamarine;
+  width: 48px;
 }
 .project details {
   position: relative;
