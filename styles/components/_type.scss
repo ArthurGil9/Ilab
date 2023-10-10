@@ -23,6 +23,10 @@ html, body {
     };
   }
 
+  &-wrapper--2{
+    height: 100vh;
+  }
+
   &-pagination{
     height: 100%;
     display: flex;

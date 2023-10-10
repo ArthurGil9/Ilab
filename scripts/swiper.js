@@ -21,3 +21,9 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+const swiper2 = new Swiper('.swiper--2', {
+  direction: 'vertical',
+  loop: true,
+  slidesPerView: 3,
+});
