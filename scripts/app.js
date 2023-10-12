@@ -119,5 +119,17 @@ function handleImageClicks() {
   projectClose.addEventListener('click', (e) =>{
     pageProject.classList.add('project--hidden');
   })
-}
+};
 
+
+const details = document.querySelectorAll('.project__person');
+
+details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+        details.forEach((detail) => {
+            if (detail !== targetDetail) {
+                detail.removeAttribute("open");
+            }
+        });
+    });
+});

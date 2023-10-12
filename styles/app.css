@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --color-white: #FFFFFF;
   --color-solitude: #F0F1F3;
@@ -65,7 +64,7 @@ html, body {
   padding: 32px 48px;
   display: flex;
   flex-flow: column nowrap;
-  gap: 80px;
+  gap: 32px;
 }
 .project__details {
   text-align: end;
@@ -73,6 +72,25 @@ html, body {
   flex-direction: column;
   justify-content: end;
   text-transform: uppercase;
+}
+.project__details--timing {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+.project__details .svg__hourglass {
+  height: 18px;
+}
+.project__details .svg__hourglass--stroke {
+  fill: none;
+  stroke: var(--color-jet);
+  stroke-miterlimit: 10;
+}
+.project__details .svg__hourglass--fill {
+  fill: var(--color-jet);
+  stroke: none;
 }
 .project__desc .title {
   padding-bottom: 16px;
@@ -99,40 +117,48 @@ html, body {
   stroke-width: 40;
   stroke-miterlimit: 10;
 }
-.project details {
-  position: relative;
+.project__person {
+  border-bottom: 1px solid var(--color-opacity-high);
 }
-.project details::before {
+.project__person:last-of-type {
+  border-bottom: none;
+}
+.project__person summary {
+  position: relative;
+  padding: 10px 0 10px 32px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  list-style: none;
+  transition: margin 0.5s ease;
+}
+.project__person summary::before, .project__person summary::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  display: block;
+  width: 16px;
   height: 1px;
   background-color: var(--color-opacity-high);
+  top: 50%;
+  left: 0;
+  transition: all 0.5s ease;
 }
-.project summary {
+.project__person summary::before {
+  transform: rotate(-90deg);
+}
+.project__person summary::after {
+  transform: rotate(-180deg);
+}
+.project__person[open] summary {
   margin-bottom: 8px;
-  text-transform: uppercase;
 }
-.project details > summary {
-  display: list-item;
-  list-style: none;
+.project__person[open] summary::before {
+  opacity: 0;
 }
-.project details[open] > summary:before {
-  content: "–";
-}
-.project details:not([open]) > summary:before {
-  content: "+";
-}
-.project details > summary:before {
-  display: inline-block;
-  font-size: 32px;
-  margin-right: 32px;
-  font-weight: 100;
+.project__person[open] summary::before, .project__person[open] summary::after {
+  transform: rotate(0deg);
 }
 .project__roll {
-  padding-left: 10%;
+  padding-left: 32px;
 }
 .project__socialmed {
   display: block;
@@ -142,7 +168,7 @@ html, body {
   padding-top: 16px;
   padding-bottom: 16px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 .project__role {
@@ -150,6 +176,11 @@ html, body {
 }
 .project__retour {
   width: 24px;
+  margin-top: auto;
+  fill: none;
+  stroke: var(--color-black);
+  stroke-linecap: square;
+  stroke-width: 4px;
 }
 .project__slider {
   height: 100%;
@@ -175,7 +206,7 @@ html, body {
 }
 .project__el {
   position: absolute;
-  transform: translateY(62px);
+  transform: translateY(32px);
   text-transform: uppercase;
   align-self: flex-start;
   bottom: 0;
