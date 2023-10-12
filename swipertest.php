@@ -57,33 +57,31 @@ $projects = $data['projects'];
   <body>
     <main>
       <section class="home">
-        <ul class="option__list">
 
         <!-- Slider main container -->
           <div class="swiper--2">
             <!-- Additional required wrapper -->
-            <ul class="swiper-wrapper swiper-wrapper--2">
+            <ul class="swiper-wrapper option__list">
               <!-- Slides -->
               <?php foreach($options as $option){
                 $optionid = $option['id'];
                 $optiontitle = $option['title'];
                 ?>
 
-                <li class="swiper-slide"><button class="option__el" data-option="<?php echo $optionid ?>"><?php echo $optiontitle ?></button></li>
+                <li class="swiper-slide option__el" data-option="<?php echo $optionid ?>"><?php echo $optiontitle ?></li>
 
               <?php } ?>
             </ul>
           </div>
-          
-        </ul>
 
         <div class="container">
         </div>
       </section>
     
 
-    <article class="project--test">
+    <article class="project--test project--hidden">
         <h2 id="title">Projet</h2>
+        <p id="close">CLOSE</p>
         <ul class="project__proglist">
             <li class="project__progel text">
             </li>

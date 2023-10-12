@@ -46,24 +46,33 @@ fetch('scripts/projects.json')
       handleImageClicks();
     }
 
-    var optionEls = document.querySelectorAll('.option__el');
-    optionEls.forEach(function(optionEl) {
-      optionEl.addEventListener('click', function() {
-        var option = this.getAttribute('data-option');
-
-        if (option === 'all') {
-          var filteredProjects = projects;
-        } else {
-          var filteredProjects = projects.filter(function(project) {
-            return project.filter === option;
-          });
+    const swiper2 = new Swiper('.swiper--2', {
+      direction: 'vertical',
+      loop: true,
+      slidesPerView: 3,
+      centeredSlides: true,
+    
+      on: {
+        slideChangeTransitionEnd: function () {
+          var activeSlide = this.slides[this.activeIndex];
+          var option = activeSlide.getAttribute('data-option');
+    
+          var filteredProjects;
+    
+          if (option === 'all') {
+            filteredProjects = projects;
+          } else {
+            filteredProjects = projects.filter(function(project) {
+              return project.filter === option;
+            });
+          }
+    
+          var gridContainer = document.querySelector(".container");
+          gridContainer.innerHTML = '';
+    
+          generateGrid(filteredProjects);
         }
-
-        var gridContainer = document.querySelector(".container");
-        gridContainer.innerHTML = '';
-
-        generateGrid(filteredProjects);
-      });
+      }
     });
 
     generateGrid(projects);
@@ -82,6 +91,8 @@ function shuffle(array) {
 }
 
 function handleImageClicks() {
+  // A CHANGER
+  var pageProject = document.querySelector('.project--test');
   var gridImgs = document.querySelectorAll('.grid__img');
   gridImgs.forEach(function(gridImg) {
     gridImg.addEventListener('click', function() {
@@ -94,6 +105,8 @@ function handleImageClicks() {
           console.log(projectData);
         }
       }
+
+      pageProject.classList.remove("project--hidden");
       
       if (projectData) {
         var titleElement = document.getElementById('title');
@@ -101,4 +114,10 @@ function handleImageClicks() {
       }
     });
   });
+  
+  var projectClose = document.querySelector('#close');
+  projectClose.addEventListener('click', (e) =>{
+    pageProject.classList.add('project--hidden');
+  })
 }
+
