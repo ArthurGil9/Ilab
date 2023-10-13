@@ -5,8 +5,10 @@ var projects;
 fetch('scripts/projects.json')
   .then(response => response.json())
   .then(data => {
-    var options = data['options'];
+    const options = data['options'];
     console.log(options);
+    const programs = data['programs'];
+    console.log(programs);
     projects = data['projects'];
     console.log(projects);
 
@@ -45,6 +47,97 @@ fetch('scripts/projects.json')
 
       handleImageClicks();
     }
+
+    function handleImageClicks() {
+      var projectPage = document.querySelector('#projectPage');
+      var gridImgs = document.querySelectorAll('.grid__img');
+      gridImgs.forEach(function(gridImg) {
+        gridImg.addEventListener('click', function() {
+          var dataId = this.getAttribute('data-id');
+          var projectData = null;
+          // Chercher le projet correspondant dans les données du projet
+          for (var i = 0; i < projects.length; i++) {
+            if (projects[i].id === dataId) {
+              projectData = projects[i];
+              console.log(projectData);
+            }
+          }
+    
+          projectPage.classList.remove("project--hidden");
+          
+          // AFFICHAGE INFOS
+          if (projectData) {
+            // OPTION
+            if(projectData.option){
+              var projectOption = document.getElementById('projectOption');
+              projectOption.innerText = projectData.option;
+            }
+    
+            // TYPE DE PROJET (TFA, TFE, ...)
+            if(projectData.type){
+              var projectType = document.getElementById('projectType');
+              projectType.innerText = projectData.type;
+            }
+    
+            // ANNÉE
+            if(projectData.year){
+              var projectYear = document.getElementById('projectYear');
+              projectYear.innerText = projectData.year;
+            }
+    
+            // DURÉE
+            if(projectData.duration){
+              var projectDuration = document.getElementById('projectDuration');
+              projectDuration.innerText = projectData.duration;
+            }
+    
+            // TITRE
+            if(projectData.title){
+              var projectTitle = document.getElementById('projectTitle');
+              projectTitle.innerText = projectData.title;
+            }
+    
+            // DESCRIPTION
+            if(projectData.desc){
+              var projectDesc = document.getElementById('projectDesc');
+              projectDesc.innerText = projectData.desc;
+            }
+            
+            // PROGRAMMES
+            if(projectData.programs){
+              projectData.programs.forEach(program => {
+                // Vérifie si l'élément a un correspondant dans programs
+                const matchingProgram = programs.find(element => element.id === program);
+                
+                if (matchingProgram) {
+                  const programEl = document.createElement('li');
+                  programEl.classList.add('project__progel', 'text');
+                  
+                  // Crée une nouvelle image
+                  const progImg = document.createElement('img');
+                  progImg.src = "assets/svg_programs/" + matchingProgram.id + ".svg";
+                  progImg.alt = matchingProgram.alt;
+                  progImg.classList.add('svg__progel');
+                  programEl.appendChild(progImg);
+                  
+                  // Crée un nouveau texte avec le title du programme
+                  const progText = document.createTextNode(matchingProgram.name);
+                  programEl.appendChild(progText);
+                  
+                  var projectPrograms = document.getElementById('projectPrograms');
+                  projectPrograms.appendChild(programEl);
+                }
+              });
+            };
+          };
+        });
+      });
+      
+      var projectClose = document.querySelector('#close');
+      projectClose.addEventListener('click', (e) =>{
+        projectPage.classList.add('project--hidden');
+      })
+    };
 
     const swiper2 = new Swiper('.swiper--2', {
       direction: 'vertical',
@@ -90,38 +183,6 @@ function shuffle(array) {
   }
 }
 
-function handleImageClicks() {
-  // A CHANGER
-  var pageProject = document.querySelector('.project--test');
-  var gridImgs = document.querySelectorAll('.grid__img');
-  gridImgs.forEach(function(gridImg) {
-    gridImg.addEventListener('click', function() {
-      var dataId = this.getAttribute('data-id');
-      var projectData = null;
-      // Chercher le projet correspondant dans les données du projet
-      for (var i = 0; i < projects.length; i++) {
-        if (projects[i].id === dataId) {
-          projectData = projects[i];
-          console.log(projectData);
-        }
-      }
-
-      pageProject.classList.remove("project--hidden");
-      
-      if (projectData) {
-        var titleElement = document.getElementById('title');
-        titleElement.innerText = projectData.title;
-      }
-    });
-  });
-  
-  var projectClose = document.querySelector('#close');
-  projectClose.addEventListener('click', (e) =>{
-    pageProject.classList.add('project--hidden');
-  })
-};
-
-
 const details = document.querySelectorAll('.project__person');
 
 details.forEach((targetDetail) => {
@@ -132,4 +193,26 @@ details.forEach((targetDetail) => {
             }
         });
     });
+});
+
+const swiper = new Swiper(".swiper", {
+  lazy: true,
+  direction: "vertical",
+  loop: false,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      translate: [0, 0, -1],
+    },
+    next: {
+      translate: [0, "100%", 0],
+    },
+  },
 });
