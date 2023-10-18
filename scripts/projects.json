@@ -134,68 +134,70 @@
       "alt": "Logo du logiciel ZBrush"
     }
   ],
+
+  "socials": [
+    {
+      "id": "artstation",
+      "name": "Artstation"
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook"
+    },
+    {
+      "id": "github",
+      "name": "GitHub"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn"
+    },
+    {
+      "id": "youtube",
+      "name": "Youtube"
+    }
+  ],
   
   "projects": [
     {
       "id": "1",
-      "filter": "",
       "option": "",
       "type": "",
       "year": "",
       "duration": "",
       "title": "",
       "desc": "",
-      "programs": ["photoshop", "marvelous_designer", "premiere_pro", "3ds_max"],
+      "programs": ["nimportequoi"],
       "steps": [
         {
           "img": "assets/placeholders/placeholder_paysage.jpg",
           "img2x": "assets/placeholders/placeholder_paysage@2x.jpg 2x",
           "name": "Rendu final"
-        },
-        {
-          "img": "assets/placeholders/placeholder_portrait.jpg",
-          "img2x": "assets/placeholders/placeholder_portrait@2x.jpg 2x",
-          "name": "croquis"
         }
       ],
-      "people": [
+      "team": [
         {
           "name": "Étudiant 1",
-          "app": "instagram",
-          "social": "reseausocial",
-          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
-        },
-        {
-          "name": "Étudiant 2",
-          "app": "instagram",
-          "social": "reseausocial",
-          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
-        },
-        {
-          "name": "Étudiant 3",
-          "app": "instagram",
-          "social": "reseausocial",
-          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
-        },
-        {
-          "name": "Étudiant 4",
-          "app": "instagram",
-          "social": "reseausocial",
-          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+          "app": "",
+          "social": "",
+          "tasks": []
         }
       ]
     },
 
     {
       "id": "2",
-      "filter": "dwt",
-      "option": "Design Web & Transmedia",
-      "type": "Type du projet",
+      "option": "dwt",
+      "type": "TFE",
       "year": 2023,
       "duration": "Durée",
-      "title": "Titre du projet 2",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "programs": ["Programe 1", "Programe 2", "Programe 3"],
+      "title": "Ceci est un très long titre oui bien sûr vois tu",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "programs": ["photoshop", "illustrator", "indesign", "marvelous_designer", "premiere_pro", "3ds_max"],
       "steps": [
         {
           "img": "assets/placeholders/placeholder_portrait.jpg",
@@ -203,28 +205,38 @@
           "name": "Rendu final"
         },
         {
+          "img": "assets/placeholders/placeholder_paysage.jpg",
+          "img2x": "assets/placeholders/placeholder_paysage@2x.jpg 2x",
+          "name": ""
+        },
+        {
+          "img": "assets/placeholders/placeholder_paysage.jpg",
+          "img2x": "assets/placeholders/placeholder_paysage@2x.jpg 2x",
+          "name": "test"
+        },
+        {
           "img": "assets/placeholders/placeholder_portrait.jpg",
           "img2x": "assets/placeholders/placeholder_portrait@2x.jpg 2x",
           "name": "croquis"
         }
       ],
-      "people": [
+      "team": [
         {
           "name": "Étudiant 1",
           "app": "instagram",
-          "social": "reseausocial",
-          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
+          "social": "johndoe",
+          "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9", "Task 10"]
         },
         {
           "name": "Étudiant 2",
-          "app": "instagram",
-          "social": "reseausocial",
+          "app": "facebook",
+          "social": "mynameisbobbob",
           "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
         },
         {
           "name": "Étudiant 3",
           "app": "instagram",
-          "social": "reseausocial",
+          "social": "lareinedeshamstersestpassée",
           "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6", "Task 7", "Task 8", "Task 9"]
         },
         {

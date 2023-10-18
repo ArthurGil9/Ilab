@@ -37,8 +37,25 @@
 .grid__item{
   height: 100%;
   width: 100%;
+  opacity: 0;
   // height: -webkit-fill-available;
   background-color: silver;
+  animation: appear 0.3s ease-out forwards;
+}
+
+@for $i from 0 through 46 {
+  .grid__item--#{$i} {
+    animation-delay: 0.1s * $i;
+  }
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .grid__item--0 { grid-area: 9 / 4 / 11 / 5; }

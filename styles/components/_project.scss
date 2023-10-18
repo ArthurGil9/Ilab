@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 2fr 5fr;
   height: 100vh;
+  background-color: var(--color-white);
 
   //Contexte
   &__context {
@@ -44,10 +45,24 @@
   }
 
   //Titre projet
+  &__title{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    // Si le titre fait + de 2 lignes, ça fera ... afin de pas casser la css/overflow
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
   &__desc {
     .title {
       padding-bottom: 16px;
     }
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    // Si la desc fait + de 4 lignes, ça fera ... afin de pas casser la css/overflow
+    -webkit-line-clamp: 4;
+    overflow: hidden;
   }
 
   //ProgList
@@ -63,20 +78,6 @@
     display: flex;
     gap: 16px;
     align-items: center;
-  }
-
-  .svg{
-    &__progel {
-    width: 45px;
-    fill: var(--color-black);
-    }
-
-    &__border {
-      fill: none;
-      stroke: var(--color-black);
-      stroke-width: 40;
-      stroke-miterlimit: 10;
-    }
   }
 
   //TEAM
@@ -115,6 +116,10 @@
       &::after{
         transform: rotate(-180deg);
       }
+
+      &.nodetails::before, &.nodetails::after{
+        display: none;
+      }
     }
 
     &[open]{
@@ -138,7 +143,8 @@
   
 
   &__socialmed {
-    display: block;
+    display: flex;
+    gap: 8px;
     margin-top: -16px;
   }
 
@@ -199,6 +205,25 @@
     align-self: flex-start;
     bottom: 0;
     left: 0;
+  }
+}
+
+.svg{
+  &__progel {
+  width: 45px;
+  fill: var(--color-black);
+  }
+
+  &__border {
+    fill: none;
+    stroke: var(--color-black);
+    stroke-width: 40;
+    stroke-miterlimit: 10;
+  }
+
+  &__social{
+    height: 15px;
+    opacity: 0.6;
   }
 }
 

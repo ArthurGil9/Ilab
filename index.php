@@ -1,3 +1,12 @@
+<?php
+$json = file_get_contents('scripts/projects.json');
+$data = json_decode($json, true);
+
+$options = $data['options'];
+$programs = $data['programs'];
+$projects = $data['projects'];
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -44,84 +53,65 @@
     <link rel="stylesheet" href="styles/app.css">
 
     <script src="scripts/app.js" defer></script>
-    <script src="scripts/swiper.js" defer></script>
   </head>
   <body>
     <main>
-      <article class="project">
+      <section class="home">
+
+        <!-- Slider main container -->
+          <div class="swiper--2">
+            <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper option__list">
+              <!-- Slides -->
+              <?php foreach($options as $option){
+                $optionid = $option['id'];
+                $optiontitle = $option['title'];
+                ?>
+
+                <li class="swiper-slide option__el" data-option="<?php echo $optionid ?>"><?php echo $optiontitle ?></li>
+
+              <?php } ?>
+            </ul>
+          </div>
+
+        <div class="container">
+        </div>
+      </section>
+
+      <article id="projectPage" class="project project--hidden">
         <div class="project__context">
           <div class="project__details">
-            <p class="text">Option</p>
-            <p class="text">Travail de fin d'études 2023</p>
+            <p id="projectOption" class="text"></p>
+            <p class="text"><span id="projectType"></span> <span id="projectYear"></span></p>
             <div class="project__details--timing">
               <svg class="svg__hourglass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.15 18">
                 <path class="svg__hourglass--stroke" d="M1.8 15.79v-.96c0-2.97 1.78-3.78 2.98-4.34.86-.4 1.49-.69 1.29-1.45v-.02c-.25-.88-.95-1.22-1.75-1.6-1.15-.56-2.51-1.21-2.51-4.06V2.21M12.41 2.21v1.15c0 2.84-1.36 3.5-2.51 4.06-.79.38-1.49.72-1.74 1.58v.02c-.22.78.41 1.07 1.28 1.47 1.21.56 2.98 1.37 2.98 4.34v.96"/>
                 <path class="svg__hourglass--fill" d="M13.87 15.51H.28c-.15 0-.28.13-.28.28v1.93c0 .15.13.28.28.28h13.58c.15 0 .28-.13.28-.28v-1.93c0-.15-.13-.28-.28-.28ZM13.87 0H.28C.13 0 0 .13 0 .28v1.93c0 .15.13.28.28.28h13.58c.15 0 .28-.13.28-.28V.28c0-.15-.13-.28-.28-.28Z"/>
               </svg>
 
-              <p class="project__time text">Temps</p>
+              <p id="projectDuration" class="text"></p>
             </div>
           </div>
 
           <div class="project__desc">
-            <h2 class="title">Titre du projet</h2>
-            <p class="text text--big">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2 id="projectTitle" class="project__title title">Titre du projet</h2>
+            <p id="projectDesc" class="project__desc text text--big">Description du projet</p>
           </div>
           
-          <ul class="project__proglist">
-            <li class="project__progel text">
-              <img class="svg__progel" src="assets/svg_programs/Adobe/photoshop.svg" alt="">
-               Photoshop
-            </li>
-            <li class="project__progel text">(SVG) Premiere Pro</li>
-            <li class="project__progel text">(SVG) 3Ds studio Max</li>
-            <li class="project__progel text">(SVG) Marvelous Designer</li>
+          <ul id="projectPrograms" class="project__proglist">
           </ul>
 
-          <div class="project__team">
-            <details class="project__person">
-              <summary class="text text--bold">Personne Lambda</summary>
-
-              <div class="project__roll">
-                <small class="text text--small project__socialmed">(SVG) @socialmedia</small>
-                <ul class="project__task">
-                  <li class="project__role text">Rôle</li>
-                  <li class="project__role text">Rôle</li>
-                  <li class="project__role text">Rôle</li>
-                  <li class="project__role text">Rôle</li>
-                  <li class="project__role text">Rôle</li>
-                </ul>
-              </div>
-              
-            </details>
+          <div id="projectTeam" class="project__team">
           </div>
 
-          <svg class="project__retour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+          <svg id="close" class="project__retour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
             <path d="m2,3v25h25"/>
             <path d="m4.7,26.38L26.3,3.7"/>
           </svg>
         </div>
 
         <div class="swiper project__content">
-          <div class="swiper-wrapper project__slider">
-
-            <div class="swiper-slide">
-              <div class="project__step">
-                <div class="project__pres">
-                    <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
-                    <small class="project__el text">Etape</small>
-                  </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="project__step">
-                <div class="project__pres">
-                  <img class="project__pic" src="assets/placeholders/placeholder_paysage.jpg" srcset="assets/placeholders/placeholder_paysage@2x.jpg 2x" alt="Ceci est un placeholder en format paysage">
-                  <small class="project__el text">Etape</small>
-                </div>
-              </div>
-            </div>
+          <div id="swiperWrapper" class="swiper-wrapper project__slider">
           </div>
 
           <div class="swiper-pagination"></div>
